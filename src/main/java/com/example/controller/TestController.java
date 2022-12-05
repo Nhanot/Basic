@@ -15,7 +15,7 @@ import com.example.model.response.exception.ErrorDetail;
 public class TestController {
 	
 	@GetMapping("/test")
-	public Object x() throws Exception{
+	public Object testErrorHandle() throws Exception{
 		
 		List<ErrorDetail> errors = new ArrayList<>();
 		errors.add(new ErrorDetail("id123", "testError"));
